@@ -147,8 +147,11 @@ a {
     font-family: 'Jura', serif;
     font-size: 48px;
     text-align: center;
-    margin-top: 140px;
     color: #1D1D1D;
+}
+
+#title {
+    margin-top: 140px;
 }
 
 .product-container {
@@ -158,6 +161,7 @@ a {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 140px;
 }
 
 .card-description {
@@ -178,6 +182,15 @@ a {
     color: #1D1D1D;
     padding-bottom: 10px;
 }
+.product-card img{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
+.product-card img:hover {
+    transform: scale(1.2);
+}
 
 .price-card {
     font-family: 'Robotobold', serif;
@@ -194,7 +207,9 @@ a {
 
 .container-cards {
     width: 100%;
+    display: flex;
     justify-content: center;
+    flex-flow: wrap;
     margin-top: 140px;
 }
 

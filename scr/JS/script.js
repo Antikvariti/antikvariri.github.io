@@ -1,13 +1,14 @@
 window.addEventListener('load', () => {
-    createSection('section1', 'container-cards');
-    createSection('section2', 'container-cards2');
+    createSection('section1', 'furniture');
+    createSection('section2', 'light');
+    createSection('section3', 'accessories');
 });
 
 function createSection(filename, containerName) {
     fetch('/index.html/scr/'+filename+'.json')
         .then(response => response.json())
         .then(data => {
-            const productContainer = document.getElementsByClassName(containerName);
+            const productContainer = document.getElementById(containerName);
             data.forEach(product => {
                 const productCard = document.createElement('div');
                 productCard.classList.add('product-container');
@@ -24,7 +25,7 @@ function createSection(filename, containerName) {
           </div>
         </div>
       `;
-                productContainer[0].appendChild(productCard);
+                productContainer.appendChild(productCard);
             });
 
         });
