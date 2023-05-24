@@ -41,6 +41,12 @@ a {
     align-items:center;
 }
 
+.menu {
+    list-style-type: none;
+    color: #FFFFFF;
+    font-family: 'Jura', serif;
+    font-size: 26px;
+}
 
 .menu li {
     display: inline-block;
@@ -145,6 +151,14 @@ a {
     color: #1D1D1D;
 }
 
+.product-container {
+    width: 30%;
+    height: 531px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .card-description {
     height: 131px;
