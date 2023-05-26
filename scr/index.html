@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <title>Home Harmony</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -19,9 +20,23 @@
                 <li><a href="#section3">Аксессуары</a></li>
                 <li><a href="#supply">Доставка</a></li>
             </ul>
-            <button class="theme-toggle">
+            <button class="theme-toggle" onclick="toggleTheme()">
                 <img src="img/theme.png" alt="Темная тема">
             </button>
+            <button class="menu-mobile"  onclick="toggleNavbarMenu()">
+                <img src="img/menu.png" alt="Меню">
+            </button>
+        </div>
+        <div class="navbar-menu-mobile">
+            <div class="list">
+            <ul class="menu-mobile-text">
+                <li><a href="#information">О нас</a></li>
+                <li><a href="#title">Мебель</a></li>
+                <li><a href="#section2">Свет</a></li>
+                <li><a href="#section3">Аксессуары</a></li>
+                <li><a href="#supply">Доставка</a></li>
+            </ul>
+            </div>
         </div>
     </div>
 </nav>
@@ -45,17 +60,29 @@
         <div class="container-cards" id="furniture">
         </div>
     </section>
-
     <section class="container-light" id="section2">
         <h2 class="heading">СВЕТ</h2>
         <div class="container-cards" id="light"></div>
     </section>
-
     <section class="container-accessories" id="section3">
         <h2 class="heading">АКСЕССУАРЫ</h2>
         <div class="container-cards" id="accessories"></div>
     </section>
-
+    <form id="purchaseForm">
+        <label for="quantity">Количество</label>
+        <input type="number" id="quantity" min="1" required>
+        <p>Цвет:</p>
+        <label><input type="radio" name="color" value="red"> Красный</label>
+        <label><input type="radio" name="color" value="green"> Зеленый</label>
+        <label><input type="radio" name="color" value="blue"> Синий</label>
+        <label for="comment">Комментарий:</label>
+        <textarea id="comment" maxlength="2000"></textarea>
+        <button type="submit">Купить</button>
+    </form>
+    <div id="purchaseMessage" style="display: none;">
+        <p>Спасибо за покупку!</p>
+        <button id="closeButton">Закрыть</button>
+    </div>
     <section class="container-delivery" id="supply">
         <div class="delivery-description">
             <div class="title-deliveri">
@@ -80,19 +107,27 @@
                     <img src="img/inst.png" alt="Инстаграм">
                 </a>
             </div>
-            <div>
                 <span class="contact-section">Для заказа и уточнения вопросов позвоните нам, напишите на почту или в соцсети.</span>
+            <div class="footer-menu-contacts">
+            <div class="nav">
+                <ul class="footer-menu">
+                    <li><a href="#information">О нас</a></li>
+                    <li><a href="#title">Мебель</a></li>
+                    <li><a href="#section2">Свет</a></li>
+                    <li><a href="#section3">Аксессуары</a></li>
+                    <li><a href="#supply">Доставка</a></li>
+                </ul>
             </div>
             <div class="contact-info">
-                <a href="#" id="item"> Телефон: +45 96 26 46 45</a>
-                <a href="#" id="item">Факс: +45 96 26 46 50</a>
-                <a href="#" id="item">E-mail: info@bloomingville.com</a>
+                <a href="tel:+4596264645" id="item-tel"> Телефон: +45 96 26 46 45</a>
+                <a href="fax:+4596264650" id="item-fax">Факс: +45 96 26 46 50</a>
+                <a href="mailto:info@bloomingville.com" id="item-mail">E-mail: info@bloomingville.com</a>
+            </div>
             </div>
         </div>
     </section>
+    <button id="scrollButton" onclick="scrollToTop()" style="display: none;"><img src="img/scrollbutton.png" alt="ВВЕРХ"></button>
 </main>
-
-
 </body>
 </html>
 

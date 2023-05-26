@@ -43,3 +43,35 @@ function getDayInfo(dateString) {
 
     return `${dayOfWeek}, ${weekNumber} неделя ${month} ${year} года`;
 }
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var scrollButton = document.getElementById("scrollButton");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+function toggleNavbarMenu() {
+    console.log("КЛИК toggleNavbarMenu");
+    let navbarMenu = document.getElementsByClassName("navbar-menu-mobile");
+    navbarMenu[0].classList.toggle("navbar-menu-mobile-active");}
+
+
+function toggleTheme() {
+    const elements = document.querySelectorAll('body, .button-card, .label, .heading');
+    elements.forEach(element => {
+        element.classList.toggle('dark-theme');
+    });
+}
