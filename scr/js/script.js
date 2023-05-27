@@ -62,7 +62,7 @@ function buyStub(filename, id) {
         </div>
         </div>
         <button class="close" onclick="closePopup()">
-            <img src="img/close.png" alt="Закрыть">
+            <img src="scr/img/close.png" alt="Закрыть">
         </button>
     </form>`
         });
