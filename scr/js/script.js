@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 });
 
 function createSection(filename, containerName) {
-    fetch('js/' + filename + '.json')
+    fetch('scr/js/' + filename + '.json')
         .then(response => response.json())
         .then(data => {
             const productContainer = document.getElementById(containerName);
@@ -14,7 +14,7 @@ function createSection(filename, containerName) {
                 productCard.classList.add('product-container');
                 productCard.innerHTML = `
         <div class="product-card">
-          <img src="/index.html/scr/img/${product.image}" alt="Товар" class="img">
+          <img src="scr/img/${product.image}" alt="Товар" class="img">
           <div class="card-description">
             <div class="name">
               <h3 class="name-card">${product.name}</h3>
@@ -33,7 +33,7 @@ function createSection(filename, containerName) {
 
 
 function buyStub(filename, id) {
-    fetch('js/' + filename + '.json', { mode: 'no-cors'})
+    fetch('scr/js/' + filename + '.json')
         .then(response => response.json())
         .then(data => {
             const product = data.find(prod => prod.id === id)
@@ -42,7 +42,7 @@ function buyStub(filename, id) {
     <form id="Form-active" method="post">
         <div class="form-elements">
             <div class="product-card-form">
-                <img src="/index.html/scr/img/${product.image}" alt="Товар" class="img">
+                <img src="scr/img/${product.image}" alt="Товар" class="img">
                 <div class="card-description-form">
                         <h3 class="name-card-form">${product.name}</h3>
                         <p class="price-card-form">${product.price}</p>
