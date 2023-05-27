@@ -70,7 +70,7 @@ function toggleNavbarMenu() {
 
 
 function toggleTheme() {
-    const elements = document.querySelectorAll('body, .button-card, .label, .heading');
+    const elements = document.querySelectorAll('body, .button-card, .label, .heading, #Form, .quantity-block, .color-radio-buttons, #comment, .comment, .purchase, .product-card-form');
     elements.forEach(element => {
         element.classList.toggle('dark-theme');
     });

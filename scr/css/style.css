@@ -252,15 +252,125 @@ a {
     color: #FFFFFF;
 }
 
-/*#purchaseForm {*/
-/*    width: 830px;*/
-/*    height: 700px;*/
-/*    color: #FFFFFF;*/
-/*    border: 1px solid #727272;*/
-/*}*/
+#Form {
+    width: 60%;
+    height: 600px;
+    border: 1px solid rgba(114, 114, 114, 0.5);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Form.dark-theme {
+    border: 1px solid rgba(114, 114, 114, 0.5);
+    background-color: #1D1D1D;
+}
+
+.form-elements {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: column;
+    margin-top: 60px;
+}
+
+.quantity-block {
+    width: 60%;
+    height: 55px;
+    border: 1px solid #1D1D1D;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Jura', serif;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.quantity-block.dark-theme, .color-radio-buttons.dark-theme, #comment.dark-theme {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.color-radio-buttons {
+    width: 70%;
+    height: 115px;
+    border: 1px solid #1D1D1D;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Jura', serif;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px
+}
+
+.color-radio-buttons label {
+    padding: 5px;
+}
+
+.comment {
+    font-family: 'Jura', serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.comment.dark-theme {
+   color: #FFFFFF;
+}
+
+
+.product-card-form {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+}
+
+.product-card-form.dark-theme {
+    color: #FFFFFF;
+}
+
+.name-card-form, .price-card-form {
+    font-family: 'Robotobold', serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#comment {
+    resize: none;
+    border: 1px solid #1D1D1D;
+    outline: none;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.purchase {
+    width: 60%;
+    height: 55px;
+    background-color: #1D1D1D;
+    font-family: 'Jura', serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.purchase.dark-theme {
+    background-color: #FFFFFF;
+    color: #1D1D1D;
+}
 
 .quantity {
-    border: 1px solid #727272;
+    border: 1px solid #1D1D1D;
+    width: 320px;
+    height: 69px;
 }
 
 .container-delivery {
