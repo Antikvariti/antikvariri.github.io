@@ -194,6 +194,7 @@ a {
     color: #1D1D1D;
     padding-bottom: 10px;
 }
+
 .product-card img{
     display: flex;
     justify-content: center;
@@ -253,12 +254,20 @@ a {
 }
 
 #Form {
+    display: none;
+}
+
+#Form-active{
     width: 60%;
     height: 600px;
     border: 1px solid rgba(114, 114, 114, 0.5);
-    margin: auto;
     display: flex;
     justify-content: center;
+    margin-top: 120px;
+    margin-left: 20%;
+    position: fixed;
+    z-index: 9999;
+    background-color: #FFFFFF;
 }
 
 #Form.dark-theme {
@@ -282,7 +291,7 @@ a {
 
 .quantity-block {
     width: 60%;
-    height: 55px;
+    height: 70px;
     border: 1px solid #1D1D1D;
     display: flex;
     flex-wrap: wrap;
@@ -316,6 +325,10 @@ a {
     padding: 5px;
 }
 
+label input {
+    margin-right: 10px;
+}
+
 .comment {
     font-family: 'Jura', serif;
     font-size: 16px;
@@ -323,9 +336,22 @@ a {
 }
 
 .comment.dark-theme {
-   color: #FFFFFF;
+    color: #FFFFFF;
 }
 
+.Message{
+    padding-top: 100px;
+    font-family: 'Jura', serif;
+    font-size: 40px;
+}
+
+.close-message {
+    font-family: 'Robotobold', serif;
+    font-size: 20px;
+    border: 1px solid #9A9A9A;
+    color: #9A9A9A;
+    margin-left: 90px;
+}
 
 .product-card-form {
     padding: 15px;
@@ -371,6 +397,14 @@ a {
     border: 1px solid #1D1D1D;
     width: 320px;
     height: 69px;
+}
+
+.close {
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 5%;
 }
 
 .container-delivery {
@@ -455,6 +489,7 @@ h2::before {
 #item-tel, #item-fax, #item-mail{
     padding-bottom: 15px;
 }
+
 .footer-menu li a {
     display: inline-block;
     padding-bottom: 15px;
@@ -494,7 +529,6 @@ h2::before {
         .menu-mobile, .navbar-menu-mobile {
              display:none;
          }
-
 
         .menu, .about-social {
             font-size: 16px;
@@ -543,8 +577,19 @@ h2::before {
         .heading {
             margin-top: 140px;
         }
-}
 
+        #Form-active{
+            width: 85%;
+            height: 600px;
+            margin-top: 120px;
+            margin-left: 7%;
+         }
+
+        .close {
+            margin-left: 8%;
+            margin-right: 5%;
+         }
+}
 
 @media (max-width: 768px) {
         .theme-toggle {
@@ -568,7 +613,6 @@ h2::before {
             align-items: center;
             margin-top: 200px;
             padding-top: 200px;
-        /*    починить меню*/
         }
 
         .menu-mobile-text {
@@ -650,6 +694,23 @@ h2::before {
 
         .heading {
             margin-top: 140px;
+         }
+
+        #Form-active{
+            width: 85%;
+            height: 600px;
+            margin-top: 120px;
+            margin-left: 7%;
+         }
+
+        .quantity-block {
+            width: 60%;
+            height: 70px;
+        }
+
+        .close {
+            margin-left: 8%;
+            margin-right: 5%;
          }
 }
 

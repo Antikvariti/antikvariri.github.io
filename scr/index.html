@@ -41,6 +41,38 @@
     </div>
 </nav>
 <main>
+    <div id="popup" >
+        <form id="Form" method="post">
+            <div class="form-elements">
+                <div class="product-card-form">
+                    <img src="img/card1.png" alt="Товар" class="img">
+                    <div class="card-description-form">
+                        <h3 class="name-card-form">Кресло Liva</h3>
+                        <p class="price-card-form">6499.00 р</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="quantity-block"><label for="quantity">Укажите количество</label>
+                        <input type="number" id="quantity" min="1" required></div>
+                    <div class="color-radio-buttons"><p>Выберите цвет</p>
+                        <label><input type="radio" name="color" value="red">Синий</label>
+                        <label><input type="radio" name="color" value="green">Серый</label>
+                        <label><input type="radio" name="color" value="blue">Желтый</label>
+                    </div>
+                    <label for="comment" class="comment"> Ваш комментарий </label>
+                    <textarea id="comment" maxlength="2000"></textarea>
+                    <button type="submit" class="purchase">Купить</button>
+                </div>
+            </div>
+            <button class="close">
+                <img src="img/close.png" alt="Закрыть">
+            </button>
+        </form>
+    </div>
+    <div id="purchaseMessage" style="display: none;">
+        <p>Спасибо за покупку!</p>
+        <button id="closeButton">Закрыть</button>
+    </div>
     <div class="main-screen">
         <div class="hero-section" id="first-screen"><h1 class="title">МЕБЕЛЬ, СВЕТ И АКСЕССУАРЫ</h1>
             <a href="#section1" class="button-main"><span class="button-label">Магазин</span></a>
@@ -68,48 +100,6 @@
         <h2 class="heading">АКСЕССУАРЫ</h2>
         <div class="container-cards" id="accessories"></div>
     </section>
-
-
-
-
-    <form id="Form" method="post">
-        <div class="form-elements">
-            <div class="product-card-form">
-                <img src="img/card1.png" alt="Товар" class="img">
-                <div class="card-description-form">
-                        <h3 class="name-card-form">Кресло Liva</h3>
-                        <p class="price-card-form">6499.00 р</p>
-                </div>
-            </div>
-        <div class="form-group">
-            <div class="quantity-block"><label for="quantity">Укажите количество</label>
-                <input type="number" id="quantity" min="1" required></div>
-            <div class="color-radio-buttons"><p>Выберите цвет</p>
-                <label><input type="radio" name="color" value="red">Синий</label>
-                <label><input type="radio" name="color" value="green">Серый</label>
-                <label><input type="radio" name="color" value="blue">Желтый</label>
-            </div>
-            <label for="comment" class="comment"> Ваш комментарий </label>
-        <textarea id="comment" maxlength="2000"></textarea>
-        <button type="submit" class="purchase">Купить</button>
-        </div>
-            <button class="close">
-                <img src="img/close.png" alt="Закрыть">
-            </button>
-        </div>
-    </form>
-
-
-    <div id="purchaseMessage" style="display: none;">
-        <p>Спасибо за покупку!</p>
-        <button id="closeButton">Закрыть</button>
-    </div>
-
-
-
-
-
-
     <section class="container-delivery" id="supply">
         <div class="delivery-description">
             <div class="title-deliveri">

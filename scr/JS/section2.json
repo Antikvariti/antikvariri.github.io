@@ -1,53 +1,62 @@
 [
     {
+        "id": "13",
         "image": "card13.png",
         "name": "Лампа Liva",
         "price": "5999.00 р",
         "date": "10.10.2022"
     },
     {
+        "id": "14",
         "image": "card14.png",
         "name": "Торшер Liva",
         "price": "6899.00 р",
         "date": "03.14.2023"
     },
     {
+        "id": "15",
         "image": "card15.png",
         "name": "Люстра",
         "price": "2999.00 р",
         "date": "12.23.2022"
     },
     {
+        "id": "16",
         "image": "card16.png",
         "name": "Лампа Woods",
         "price": "4999.00 р",
         "date": "03.17.2023"
     },
     {
+        "id": "17",
         "image": "card17.png",
         "name": "Люстра Liva",
         "price": "4799.00 р",
         "date": "05.11.2023"
     },
     {
+        "id": "18",
         "image": "card18.png",
         "name": "Настольная лампа",
         "price": "2999.00 р",
         "date": "02.19.2023"
     },
     {
+        "id": "19",
         "image": "card19.png",
         "name": "Набор люстр",
         "price": "8999.00 р",
         "date": "04.22.2023"
     },
     {
+        "id": "20",
         "image": "card20.png",
         "name": "Лампа Liva",
         "price": "3899.00 р",
         "date": "02.18.2023"
     },
     {
+        "id": "21",
         "image": "card21.png",
         "name": "Люстра Liva",
         "price": "2999.00 р",
