@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 });
 
 function createSection(filename, containerName) {
-    fetch('scr/JS/ + filename + '.json')
+    fetch('js/' + filename + '.json')
         .then(response => response.json())
         .then(data => {
             const productContainer = document.getElementById(containerName);
@@ -33,7 +33,7 @@ function createSection(filename, containerName) {
 
 
 function buyStub(filename, id) {
-    fetch('/index.html/scr/' + filename + '.json')
+    fetch('js/' + filename + '.json', { mode: 'no-cors'})
         .then(response => response.json())
         .then(data => {
             const product = data.find(prod => prod.id === id)
